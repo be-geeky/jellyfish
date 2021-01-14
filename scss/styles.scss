@@ -1,0 +1,337 @@
+body {
+  color: #000;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #707070;
+}
+
+video {
+  max-width: 100%;
+  object-fit: fill;
+}
+
+.vertical-row {
+  @media (min-width: 768px) {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+.vertical-col {
+  @media (min-width: 768px) {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+}
+
+.btn-secondary-outline {
+  background-color: transparent;
+  color: #626262;
+  border: 1px solid #707070;
+  padding: 8px 18px;
+  border-radius: 8px;
+
+  &:focus, &:hover {
+    background-color: #707070;
+    color: #fff;
+  }
+}
+
+.img-parallax {
+  transition: all 1.7s;
+}
+
+.jelly-land {
+
+  p {
+    color: #707070;
+  }
+
+  .jelly-title {
+    text-align: center;
+
+    h1 {
+      font-weight: 600;
+      font-size: 36px;
+      max-width: 330px;
+      margin: 8px auto;
+      width: 100%;
+      line-height: 33px;
+    }
+  }
+
+  .gun-charger {
+    margin: 20px 0 70px;
+
+    .gun-charger-types {
+      .gun-charger-bg {
+        /* Set a specific height */
+        min-height: 650px;
+        /* Create the parallax scrolling effect */
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+      }
+    }
+  }
+}
+
+.rapid-charge {
+  width: 100%;
+  display: inline-block;
+  margin: 30px 0;
+
+  .container {
+    position: relative;
+  }
+
+  &-data {
+    width: 100%;
+    height: 100%;
+    max-width: 100%;
+
+    @media (min-width: 992px) {
+      position: absolute;
+      right: 30px;
+      top: 0;
+      max-width: 450px;
+    }
+
+    h3,p {
+      color: #232323;
+    }
+
+    .rapid-box {
+      width: 100%;
+      height: 94px;
+      background-repeat: no-repeat;
+      background-image: url(../images/ChargeBars/Similar-Sized-Chargers-Border.png);
+
+      @media (max-width: 767px) {
+        background-size: contain;
+      }
+
+        &-data {
+          width: 0%;
+          height: 90px;
+          background-repeat: no-repeat;
+          background-image: url(../images/ChargeBars/Similar-Sized-Chargers-Bar.png);
+          transition: width 2s;
+          
+          @media (max-width: 767px) {
+            background-size: contain;
+          }
+
+          p {
+            margin: 0;
+          }
+
+          &.charged {
+            width: 100%;
+          }
+        }
+
+        &-green {
+          background-image: url(../images/ChargeBars/Speeds-Border.png);
+          position: relative;
+          margin: 20px 0;
+
+          .rapid-box-data {
+            background-image: url(../images/ChargeBars/Speeds-Bar.png);
+            background-position: 0 2px;
+          }
+        }
+      }
+
+  /*  .rapid-box {
+      border: 2px solid #a3a6a8;
+      -webkit-border-radius: 23px;
+      -webkit-border-top-right-radius: 7px;
+      -webkit-border-bottom-left-radius: 7px;
+      -moz-border-radius: 23px;
+      -moz-border-radius-topright: 7px;
+      -moz-border-radius-bottomleft: 7px;
+      border-radius: 23px;
+      border-top-right-radius: 7px;
+      border-bottom-left-radius: 7px;
+      -webkit-transform: skew(-10deg);
+        -ms-transform: skew(-10deg);
+            transform: skew(-10deg);
+
+      &-data {
+        margin: 4px;
+        padding: 12px;
+        background-color: #a3a6a8;
+        color: #fff;
+        -webkit-border-radius: 17px;
+        -webkit-border-top-right-radius: 7px;
+        -webkit-border-bottom-left-radius: 7px;
+        -moz-border-radius: 17px;
+        -moz-border-radius-topright: 7px;
+        -moz-border-radius-bottomleft: 7px;
+        border-radius: 17px;
+        border-top-right-radius: 7px;
+        border-bottom-left-radius: 7px;
+
+        p {
+          margin: 0;
+        }
+      }
+
+      &-green {
+        border-color: #50e278;
+        position: relative;
+        margin-bottom: 20px;
+        margin-top: 40px;
+
+        .rapid-2x {
+          background: #50e278;
+          width: 80px;
+          position: absolute;
+          right: 5px;
+          top: -35px;
+          border-radius: 10px;
+          padding: 0 10px;
+          text-align: center;
+
+          span {
+            font-size: 40px;
+            font-weight: 600;
+            color: #fff;
+          }
+
+          p {
+            margin: 0;
+            font-size: 16px;
+            font-style: normal;
+            color: #fff;
+            font-weight: 600;
+          }
+        }
+
+        .rapid-box-data {
+          background-color: #50e278;
+        }
+      }
+    } */
+  }
+}
+
+.jellyfish-acc {
+  &-img {
+    overflow: hidden;
+
+    img {
+      transition: 3.5s all ease-in-out;
+    }
+
+    &:hover, &:focus {
+      img {
+        -ms-transform: scale(1.2);
+        -moz-transform: scale(1.2);
+        -webkit-transform: scale(1.2);
+        -o-transform: scale(1.2);
+        transform: scale(1.2);
+      }
+    }
+  }
+}
+
+.jellyfish-sleek {
+  margin: 20px 0;
+
+  &-content {
+    flex-wrap: wrap;
+    align-items: flex-end;
+
+    .sleek-title {
+      @media (max-width: 767px) {
+        margin-bottom: 30px;
+      }
+      @media (min-width: 992px) {
+        margin-bottom: 100px;
+      }
+
+      h3,p {
+        color: #232323;
+      }
+    }
+  }
+
+
+}
+
+.jelly-gan {
+  margin: 30px 0;
+
+  .container {
+    position: relative;
+  }
+
+  .jelly-gan-img {
+    img {
+      @media (min-width: 992px) {
+        margin: 0 auto;
+      }
+    }
+  }
+
+  .jelly-gan-data {
+    max-width: 550px;
+    width: 100%;
+
+    @media (min-width: 992px) {
+      position: absolute;
+      left: 0;
+      bottom: 0;
+    }
+
+    h3 {
+      margin: 0 0 10px;
+    }
+  }
+}
+
+.jelly-smart {
+  margin: 40px 0 0 0;
+
+  @media (min-width: 768px) {
+    margin: 120px 0 0 0;
+  }
+
+  .container {
+    position: relative;
+  }
+
+  &-data {
+    .jelly-smart-content {
+
+      @media (min-width: 768px) {
+        position: absolute;
+        left: 80px;
+        bottom: 60px;
+      }
+      @media (min-width: 768px) and (max-width: 991px) {
+        left: 0;
+        bottom: 10px;
+      }
+
+      h3,p {
+        @media (min-width: 768px) {
+          color: #fff;
+        }
+      }
+    }
+  }
+}
+
+.jelly-pintsize {
+  margin: 30px 0;
+}
