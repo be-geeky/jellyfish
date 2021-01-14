@@ -23,6 +23,12 @@ video {
     -ms-flex-align: center;
     align-items: center; } }
 
+@media (max-width: 767px) {
+  .mobile-flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; } }
+
 .btn-secondary-outline {
   background-color: transparent;
   color: #626262;
@@ -51,6 +57,16 @@ video {
 
 .jelly-land .gun-charger {
   margin: 20px 0 70px; }
+  @media (max-width: 991px) {
+    .jelly-land .gun-charger {
+      margin: 20px 0 10px; } }
+  @media (max-width: 767px) {
+    .jelly-land .gun-charger .gun-charger-types .mobile-flex {
+      flex-wrap: wrap; }
+      .jelly-land .gun-charger .gun-charger-types .mobile-flex div:first-child {
+        order: 2; }
+    .jelly-land .gun-charger .gun-charger-types .gun-charger-data {
+      margin-bottom: 30px; } }
   .jelly-land .gun-charger .gun-charger-types .gun-charger-bg {
     /* Set a specific height */
     min-height: 650px;
@@ -156,20 +172,29 @@ video {
       background-image: url(../images/ChargeBars/Similar-Sized-Chargers-Border.png); }
       @media (max-width: 767px) {
         .rapid-charge-data .rapid-box {
-          background-size: contain; } }
+          background-size: contain;
+          height: 100%; } }
+      @media (min-width: 768px) and (max-width: 991px) {
+        .rapid-charge-data .rapid-box {
+          background-position: center; } }
       .rapid-charge-data .rapid-box-data {
-        width: 0%;
-        height: 90px;
+        width: 100%;
+        height: 94px;
         background-repeat: no-repeat;
         background-image: url(../images/ChargeBars/Similar-Sized-Chargers-Bar.png);
         transition: width 2s; }
         @media (max-width: 767px) {
           .rapid-charge-data .rapid-box-data {
-            background-size: contain; } }
+            background-size: contain;
+            height: 42px; } }
+        @media (min-width: 768px) and (max-width: 991px) {
+          .rapid-charge-data .rapid-box-data {
+            background-position: center; } }
         .rapid-charge-data .rapid-box-data p {
           margin: 0; }
         .rapid-charge-data .rapid-box-data.charged {
-          width: 100%; }
+          animation: progressBar 2s ease-in-out;
+          animation-fill-mode: both; }
       .rapid-charge-data .rapid-box-green {
         background-image: url(../images/ChargeBars/Speeds-Border.png);
         position: relative;
@@ -177,6 +202,12 @@ video {
         .rapid-charge-data .rapid-box-green .rapid-box-data {
           background-image: url(../images/ChargeBars/Speeds-Bar.png);
           background-position: 0 2px; }
+          @media (max-width: 767px) {
+            .rapid-charge-data .rapid-box-green .rapid-box-data {
+              height: 70px; } }
+          @media (min-width: 768px) and (max-width: 991px) {
+            .rapid-charge-data .rapid-box-green .rapid-box-data {
+              background-position: center 2px; } }
 
 .jellyfish-acc-img {
   overflow: hidden; }
@@ -195,13 +226,30 @@ video {
     flex-wrap: wrap;
     align-items: flex-end; }
     @media (max-width: 767px) {
+      .jellyfish-sleek-content {
+        margin-bottom: 10px; } }
+    @media (min-width: 768px) and (max-width: 991px) {
+      .jellyfish-sleek-content {
+        align-items: center;
+        margin-bottom: 50px; } }
+    @media (max-width: 991px) {
       .jellyfish-sleek-content .sleek-title {
-        margin-bottom: 30px; } }
+        margin-bottom: 30px;
+        order: 2; } }
+    @media (min-width: 768px) and (max-width: 991px) {
+      .jellyfish-sleek-content .sleek-title {
+        float: left;
+        width: 26%;
+        padding-left: 20px; } }
     @media (min-width: 992px) {
       .jellyfish-sleek-content .sleek-title {
         margin-bottom: 100px; } }
     .jellyfish-sleek-content .sleek-title h3, .jellyfish-sleek-content .sleek-title p {
       color: #232323; }
+    @media (min-width: 768px) and (max-width: 991px) {
+      .jellyfish-sleek-content img {
+        float: left;
+        width: 74%; } }
 
 .jelly-gan {
   margin: 30px 0; }
@@ -243,3 +291,9 @@ video {
 
 .jelly-pintsize {
   margin: 30px 0; }
+
+@keyframes progressBar {
+  0% {
+    width: 0; }
+  100% {
+    width: 100%; } }
