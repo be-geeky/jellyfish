@@ -178,7 +178,7 @@ video {
         .rapid-charge-data .rapid-box {
           background-position: center; } }
       .rapid-charge-data .rapid-box-data {
-        width: 100%;
+        width: 0%;
         height: 94px;
         background-repeat: no-repeat;
         background-image: url(../images/ChargeBars/Similar-Sized-Chargers-Bar.png);
@@ -193,8 +193,7 @@ video {
         .rapid-charge-data .rapid-box-data p {
           margin: 0; }
         .rapid-charge-data .rapid-box-data.charged {
-          animation: progressBar 2s ease-in-out;
-          animation-fill-mode: both; }
+          width: 100%; }
       .rapid-charge-data .rapid-box-green {
         background-image: url(../images/ChargeBars/Speeds-Border.png);
         position: relative;
