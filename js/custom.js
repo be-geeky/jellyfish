@@ -17,7 +17,7 @@ $(document).ready(function() {
         if ($('.rapid-charge-data').isInViewport(300)) {
           $('.rapid-box-data').addClass('charged');
         }
-        if ($('.jelly-pintsize').isInViewport(300)) {
+        if ($('.js-autoplay-row').isInViewport(300)) {
           $('.js-autoplay')[0].play();
         }
       } else {

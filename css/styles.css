@@ -264,7 +264,7 @@ video {
       .jelly-gan .jelly-gan-data {
         position: absolute;
         left: 0;
-        bottom: 0; } }
+        bottom: 60px; } }
     .jelly-gan .jelly-gan-data h3 {
       margin: 0 0 10px; }
 
