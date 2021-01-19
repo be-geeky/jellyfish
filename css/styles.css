@@ -1,8 +1,5 @@
-body {
-  color: #000; }
-
-h1, h2, h3, h4, h5, h6 {
-  color: #707070; }
+h1, h2, h3, h4, h5, h6, p {
+  color: #6f706f; }
 
 video {
   max-width: 100%;
@@ -30,33 +27,44 @@ video {
     display: flex; } }
 
 .btn-secondary-outline {
-  background-color: transparent;
-  color: #626262;
-  border: 1px solid #707070;
+  background-color: #707070;
+  color: #fff;
   padding: 8px 18px;
-  border-radius: 8px; }
+  border-radius: 8px;
+  text-transform: uppercase;
+  line-height: 1.6em; }
   .btn-secondary-outline:focus, .btn-secondary-outline:hover {
-    background-color: #707070;
-    color: #fff; }
+    background-color: transparent;
+    border: 1px solid #6f706f;
+    color: #6f706f; }
 
 .img-parallax {
   transition: all 1.7s; }
 
-.jelly-land p {
-  color: #707070; }
-
-.jelly-land .jelly-title {
-  text-align: center; }
-  .jelly-land .jelly-title h1 {
-    font-weight: 600;
+.jelly-land .jelly-title .gan-box {
+  max-width: 290px;
+  margin: 8px auto;
+  width: 100%; }
+  .jelly-land .jelly-title .gan-box-data {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: baseline;
+    -ms-flex-align: baseline;
+    align-items: baseline; }
+    .jelly-land .jelly-title .gan-box-data p {
+      margin: 0 0 5px; }
+    .jelly-land .jelly-title .gan-box-data img {
+      max-width: 40px;
+      margin-left: 5px; }
+  .jelly-land .jelly-title .gan-box h1 {
+    font-weight: 700;
     font-size: 36px;
-    max-width: 330px;
-    margin: 8px auto;
-    width: 100%;
-    line-height: 33px; }
+    line-height: 33px;
+    margin: 0; }
 
 .jelly-land .gun-charger {
-  margin: 20px 0 70px; }
+  margin: 0 0 70px; }
   @media (max-width: 991px) {
     .jelly-land .gun-charger {
       margin: 20px 0 10px; } }
@@ -85,89 +93,18 @@ video {
   .rapid-charge-data {
     width: 100%;
     height: 100%;
-    max-width: 100%;
-    /*  .rapid-box {
-      border: 2px solid #a3a6a8;
-      -webkit-border-radius: 23px;
-      -webkit-border-top-right-radius: 7px;
-      -webkit-border-bottom-left-radius: 7px;
-      -moz-border-radius: 23px;
-      -moz-border-radius-topright: 7px;
-      -moz-border-radius-bottomleft: 7px;
-      border-radius: 23px;
-      border-top-right-radius: 7px;
-      border-bottom-left-radius: 7px;
-      -webkit-transform: skew(-10deg);
-        -ms-transform: skew(-10deg);
-            transform: skew(-10deg);
-
-      &-data {
-        margin: 4px;
-        padding: 12px;
-        background-color: #a3a6a8;
-        color: #fff;
-        -webkit-border-radius: 17px;
-        -webkit-border-top-right-radius: 7px;
-        -webkit-border-bottom-left-radius: 7px;
-        -moz-border-radius: 17px;
-        -moz-border-radius-topright: 7px;
-        -moz-border-radius-bottomleft: 7px;
-        border-radius: 17px;
-        border-top-right-radius: 7px;
-        border-bottom-left-radius: 7px;
-
-        p {
-          margin: 0;
-        }
-      }
-
-      &-green {
-        border-color: #50e278;
-        position: relative;
-        margin-bottom: 20px;
-        margin-top: 40px;
-
-        .rapid-2x {
-          background: #50e278;
-          width: 80px;
-          position: absolute;
-          right: 5px;
-          top: -35px;
-          border-radius: 10px;
-          padding: 0 10px;
-          text-align: center;
-
-          span {
-            font-size: 40px;
-            font-weight: 600;
-            color: #fff;
-          }
-
-          p {
-            margin: 0;
-            font-size: 16px;
-            font-style: normal;
-            color: #fff;
-            font-weight: 600;
-          }
-        }
-
-        .rapid-box-data {
-          background-color: #50e278;
-        }
-      }
-    } */ }
+    max-width: 100%; }
     @media (min-width: 1025px) {
       .rapid-charge-data {
         position: absolute;
-        right: 30px;
+        right: 20px;
         top: 0;
         max-width: 450px; } }
-    .rapid-charge-data h3, .rapid-charge-data p {
+    .rapid-charge-data h3,
+    .rapid-charge-data p {
       color: #232323; }
     .rapid-charge-data .rapid-box {
       width: 100%;
-      height: 94px;
       background-repeat: no-repeat;
       background-image: url(../images/ChargeBars/Similar-Sized-Chargers-Border.png); }
       @media (max-width: 767px) {
@@ -179,7 +116,7 @@ video {
           background-position: center; } }
       .rapid-charge-data .rapid-box-data {
         width: 0%;
-        height: 94px;
+        height: 54px;
         background-repeat: no-repeat;
         background-image: url(../images/ChargeBars/Similar-Sized-Chargers-Bar.png);
         transition: width 2s; }
@@ -200,13 +137,16 @@ video {
         margin: 20px 0; }
         .rapid-charge-data .rapid-box-green .rapid-box-data {
           background-image: url(../images/ChargeBars/Speeds-Bar.png);
-          background-position: 0 2px; }
+          background-position: 0 2px;
+          height: 94px; }
           @media (max-width: 767px) {
             .rapid-charge-data .rapid-box-green .rapid-box-data {
               height: 70px; } }
           @media (min-width: 768px) and (max-width: 1024px) {
             .rapid-charge-data .rapid-box-green .rapid-box-data {
               background-position: center 2px; } }
+    .rapid-charge-data-desc {
+      margin-top: 12px; }
 
 .jellyfish-acc-img {
   overflow: hidden; }
@@ -289,7 +229,11 @@ video {
       color: #fff; } }
 
 .jelly-pintsize {
-  margin: 30px 0 150px 0; }
+  margin: 0 0 150px 0; }
+  .jelly-pintsize-data {
+    max-width: 620px;
+    margin: 0 auto;
+    text-align: center; }
 
 @keyframes progressBar {
   0% {

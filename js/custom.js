@@ -21,11 +21,15 @@ $(document).ready(function() {
         $('.js-autoplay-row').each(function () {
           if ($(this).isInViewport(300)) {
             $(this).find('.js-autoplay')[0].play();
+            $(this).find('.autoplay').removeClass('js-autoplay');
           }
-        })
+        });
 
       } else {
-       $('.js-autoplay')[0].currentTime=0;
+       if (scroll === 0) {
+         $('video.autoplay').addClass('js-autoplay');
+         $('video.autoplay')[0].currentTime=0;
+       }
       }
       position = scroll;
   });
