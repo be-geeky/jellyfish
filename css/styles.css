@@ -42,6 +42,9 @@ video {
 .img-parallax {
   transition: all 1.7s; }
 
+.jelly-land .jelly-title .container {
+  position: relative; }
+
 .jelly-land .jelly-title .gan-box {
   max-width: 380px;
   margin: 8px auto;
@@ -49,7 +52,7 @@ video {
   @media (min-width: 1025px) {
     .jelly-land .jelly-title .gan-box {
       position: absolute;
-      right: 360px;
+      right: 160px;
       height: 100%; } }
   .jelly-land .jelly-title .gan-box-data {
     display: -webkit-box;
