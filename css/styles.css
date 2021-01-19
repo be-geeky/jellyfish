@@ -1,5 +1,6 @@
 h1, h2, h3, h4, h5, h6, p {
-  color: #6f706f; }
+  color: #6f706f;
+  font-weight: 600; }
 
 video {
   max-width: 100%;
@@ -42,9 +43,14 @@ video {
   transition: all 1.7s; }
 
 .jelly-land .jelly-title .gan-box {
-  max-width: 290px;
+  max-width: 380px;
   margin: 8px auto;
   width: 100%; }
+  @media (min-width: 1025px) {
+    .jelly-land .jelly-title .gan-box {
+      position: absolute;
+      right: 360px;
+      height: 100%; } }
   .jelly-land .jelly-title .gan-box-data {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -59,15 +65,16 @@ video {
       margin-left: 5px; }
   .jelly-land .jelly-title .gan-box h1 {
     font-weight: 700;
-    font-size: 36px;
-    line-height: 33px;
+    font-size: 46px;
+    font-family: 'proxima_novabold';
+    line-height: 0.8em;
     margin: 0; }
 
 .jelly-land .gun-charger {
   margin: 0 0 70px; }
   @media (max-width: 991px) {
     .jelly-land .gun-charger {
-      margin: 20px 0 10px; } }
+      margin: 20px 0 60px; } }
   @media (max-width: 767px) {
     .jelly-land .gun-charger .gun-charger-types .mobile-flex {
       flex-wrap: wrap; }
@@ -118,7 +125,6 @@ video {
         width: 0%;
         height: 54px;
         background-repeat: no-repeat;
-        background-image: url(../images/ChargeBars/Similar-Sized-Chargers-Bar.png);
         transition: width 2s; }
         @media (max-width: 767px) {
           .rapid-charge-data .rapid-box-data {
@@ -136,7 +142,6 @@ video {
         position: relative;
         margin: 20px 0; }
         .rapid-charge-data .rapid-box-green .rapid-box-data {
-          background-image: url(../images/ChargeBars/Speeds-Bar.png);
           background-position: 0 2px;
           height: 94px; }
           @media (max-width: 767px) {
@@ -191,7 +196,7 @@ video {
         width: 74%; } }
 
 .jelly-gan {
-  margin: 30px 0; }
+  margin: 70px 0 30px 0; }
   .jelly-gan .container {
     position: relative; }
   @media (min-width: 992px) {
@@ -208,32 +213,44 @@ video {
     .jelly-gan .jelly-gan-data h3 {
       margin: 0 0 10px; }
 
-.jelly-smart {
-  margin: 40px 0 0 0; }
-  @media (min-width: 768px) {
-    .jelly-smart {
-      margin: 120px 0 0 0; } }
-  .jelly-smart .container {
-    position: relative; }
-  @media (min-width: 768px) {
-    .jelly-smart-data .jelly-smart-content {
-      position: absolute;
-      left: 80px;
-      bottom: 60px; } }
-  @media (min-width: 768px) and (max-width: 991px) {
-    .jelly-smart-data .jelly-smart-content {
-      left: 0;
-      bottom: 10px; } }
-  @media (min-width: 768px) {
-    .jelly-smart-data .jelly-smart-content h3, .jelly-smart-data .jelly-smart-content p {
-      color: #fff; } }
+@media (max-width: 767px) {
+  .jelly-smart {
+    margin: 0 0 70px 0; } }
+
+@media (min-width: 768px) {
+  .jelly-smart {
+    margin: 120px 0 0 0; } }
+
+.jelly-smart .container {
+  position: relative; }
+
+@media (min-width: 768px) {
+  .jelly-smart-data .jelly-smart-content {
+    position: absolute;
+    left: 80px;
+    bottom: 60px; } }
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .jelly-smart-data .jelly-smart-content {
+    left: 0;
+    bottom: 10px; } }
+
+@media (min-width: 768px) {
+  .jelly-smart-data .jelly-smart-content h3, .jelly-smart-data .jelly-smart-content p {
+    color: #fff;
+    font-weight: 400; } }
 
 .jelly-pintsize {
   margin: 0 0 150px 0; }
+  @media (max-width: 991px) {
+    .jelly-pintsize {
+      margin: 0 0 100px 0; } }
   .jelly-pintsize-data {
     max-width: 620px;
     margin: 0 auto;
     text-align: center; }
+    .jelly-pintsize-data p {
+      font-weight: 400; }
 
 @keyframes progressBar {
   0% {

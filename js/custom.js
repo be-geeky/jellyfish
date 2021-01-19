@@ -29,6 +29,7 @@ $(document).ready(function() {
        if (scroll === 0) {
          $('video.autoplay').addClass('js-autoplay');
          $('video.autoplay')[0].currentTime=0;
+         $('video.autoplay')[1].currentTime=0;
        }
       }
       position = scroll;
