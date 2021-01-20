@@ -37,11 +37,13 @@ video {
 
 .btn-secondary-outline {
   background-color: #707070;
+  border: 1px solid #707070;
   color: #fff;
   padding: 8px 18px;
   border-radius: 8px;
   text-transform: uppercase;
   line-height: 1.6em;
+  transition: all 0.3s;
 
   &:focus, &:hover {
     background-color: transparent;
@@ -58,6 +60,10 @@ video {
 
   .jelly-title {
 
+    .container {
+      position: relative;
+    }
+
     .gan-box {
       max-width: 380px;
       margin: 8px auto;
@@ -65,7 +71,7 @@ video {
 
       @media (min-width: 1025px) {
         position: absolute;
-        right: 360px;
+        right: 160px;
         height: 100%;
       }
 
@@ -93,6 +99,10 @@ video {
         font-family: 'proxima_novabold';
         line-height: 0.8em;
         margin: 0;
+
+        @media (max-width: 767px) {
+          font-size: 38px;
+        }
       }
     }
   }
@@ -159,6 +169,10 @@ video {
     h3,
     p {
       color: #232323;
+
+      @media (min-width: 768px) and (max-width: 1024px) {
+        text-align: center;
+      }
     }
 
     .rapid-box {
@@ -222,6 +236,9 @@ video {
 
     &-desc {
       margin-top: 12px;
+      @media (min-width: 768px) and (max-width: 1024px) {
+        margin-top: 32px;
+      }
     }
   }
 }
@@ -231,7 +248,7 @@ video {
     overflow: hidden;
 
     img {
-      transition: 3.5s all ease-in-out;
+      transition: 4.5s all ease-in-out;
     }
 
     &:hover, &:focus {

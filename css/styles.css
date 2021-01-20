@@ -29,11 +29,13 @@ video {
 
 .btn-secondary-outline {
   background-color: #707070;
+  border: 1px solid #707070;
   color: #fff;
   padding: 8px 18px;
   border-radius: 8px;
   text-transform: uppercase;
-  line-height: 1.6em; }
+  line-height: 1.6em;
+  transition: all 0.3s; }
   .btn-secondary-outline:focus, .btn-secondary-outline:hover {
     background-color: transparent;
     border: 1px solid #6f706f;
@@ -72,6 +74,9 @@ video {
     font-family: 'proxima_novabold';
     line-height: 0.8em;
     margin: 0; }
+    @media (max-width: 767px) {
+      .jelly-land .jelly-title .gan-box h1 {
+        font-size: 38px; } }
 
 .jelly-land .gun-charger {
   margin: 0 0 70px; }
@@ -113,6 +118,10 @@ video {
     .rapid-charge-data h3,
     .rapid-charge-data p {
       color: #232323; }
+      @media (min-width: 768px) and (max-width: 1024px) {
+        .rapid-charge-data h3,
+        .rapid-charge-data p {
+          text-align: center; } }
     .rapid-charge-data .rapid-box {
       width: 100%;
       background-repeat: no-repeat;
@@ -155,11 +164,14 @@ video {
               background-position: center 2px; } }
     .rapid-charge-data-desc {
       margin-top: 12px; }
+      @media (min-width: 768px) and (max-width: 1024px) {
+        .rapid-charge-data-desc {
+          margin-top: 32px; } }
 
 .jellyfish-acc-img {
   overflow: hidden; }
   .jellyfish-acc-img img {
-    transition: 3.5s all ease-in-out; }
+    transition: 4.5s all ease-in-out; }
   .jellyfish-acc-img:hover img, .jellyfish-acc-img:focus img {
     -ms-transform: scale(1.2);
     -moz-transform: scale(1.2);
