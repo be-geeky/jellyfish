@@ -18,10 +18,10 @@ $(document).ready(function() {
           $('.rapid-box-data').addClass('charged');
         }
 
-        $('.js-autoplay-row').each(function () {
+        $('.js-autoplay').each(function () {
           if ($(this).isInViewport(300)) {
-            $(this).find('.js-autoplay')[0].play();
-            $(this).find('.autoplay').removeClass('js-autoplay');
+            $(this)[0].play();
+            $(this).removeClass('js-autoplay');
           }
         });
 
