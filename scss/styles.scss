@@ -250,6 +250,10 @@ video {
 
     img {
       transition: 4.5s all ease-in-out;
+
+      @media (min-width: 1921px) {
+        width: 100%;
+      }
     }
 
     &:hover, &:focus {
@@ -268,10 +272,13 @@ video {
   margin: 70px 0 30px 0;
 
   .container {
-    position: relative;
+    @media (min-width: 992px) {
+      position: relative;
+    }
   }
 
   .jelly-gan-img {
+
     img {
       @media (min-width: 992px) {
         margin: 0 auto;
@@ -310,6 +317,13 @@ video {
   }
 
   &-data {
+
+    img {
+      @media (min-width: 1921px) {
+        width: 100%;
+      }
+    }
+
     .jelly-smart-content {
 
       @media (min-width: 768px) {

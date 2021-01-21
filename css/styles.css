@@ -172,6 +172,9 @@ video {
   overflow: hidden; }
   .jellyfish-acc-img img {
     transition: 4.5s all ease-in-out; }
+    @media (min-width: 1921px) {
+      .jellyfish-acc-img img {
+        width: 100%; } }
   .jellyfish-acc-img:hover img, .jellyfish-acc-img:focus img {
     -ms-transform: scale(1.2);
     -moz-transform: scale(1.2);
@@ -181,8 +184,9 @@ video {
 
 .jelly-gan {
   margin: 70px 0 30px 0; }
-  .jelly-gan .container {
-    position: relative; }
+  @media (min-width: 992px) {
+    .jelly-gan .container {
+      position: relative; } }
   @media (min-width: 992px) {
     .jelly-gan .jelly-gan-img img {
       margin: 0 auto; } }
@@ -207,6 +211,10 @@ video {
 
 .jelly-smart .container {
   position: relative; }
+
+@media (min-width: 1921px) {
+  .jelly-smart-data img {
+    width: 100%; } }
 
 @media (min-width: 768px) {
   .jelly-smart-data .jelly-smart-content {
