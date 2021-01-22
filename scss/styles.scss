@@ -41,9 +41,9 @@ video {
   transition: all 0.3s;
 
   &:focus, &:hover {
-    background-color: transparent;
-    border: 1px solid #6f706f;
-    color: #6f706f;
+    background-color: #ffb232;
+    border: 1px solid #707070;
+    color: #707070;
   }
 }
 
@@ -82,7 +82,7 @@ video {
 
   h1, h2, h3, h4, h5, h6,p {
     color: #6f706f;
-    font-weight: 600;
+    font-weight: 300;
   }
 
   .jelly-title {
@@ -184,6 +184,15 @@ video {
     position: relative;
   }
 
+  &-img {
+    img {
+
+      @media (min-width: 1025px) {
+        max-width: 72%;
+      }
+    }
+  }
+
   &-data {
     width: 100%;
     height: 100%;
@@ -191,9 +200,15 @@ video {
 
     @media (min-width: 1025px) {
       position: absolute;
-      right: 20px;
+      right: 60px;
       top: 0;
       max-width: 450px;
+    }
+
+    h3 {
+      @media (min-width: 992px) {
+        font-size: 32px;
+      }
     }
 
     h3,
@@ -245,7 +260,7 @@ video {
         &-green {
           background-image: url(../images/ChargeBars/Speeds-Border.png);
           position: relative;
-          margin: 20px 0;
+          margin: 0 0 20px 0;
 
           .rapid-box-data {
             background-position: 0 2px;
@@ -264,14 +279,26 @@ video {
 
     &-desc {
       margin-top: 12px;
+      font-size: 12px;
       @media (min-width: 768px) and (max-width: 1024px) {
         margin-top: 32px;
+      }
+    }
+
+    &-text {
+      @media (min-width: 991px) {
+        font-size: 21px;
+        max-width: 249px;
+        margin-left: 100px;
+        margin-top: 30px;
       }
     }
   }
 }
 
 .jellyfish-acc {
+  position: relative;
+
   &-img {
     overflow: hidden;
 
@@ -293,10 +320,29 @@ video {
       }
     }
   }
+
+  &-content {
+    @media (min-width: 768px) {
+      position: absolute;
+      left: 220px;
+      top: 20px;
+    }
+    @media (min-width: 768px) and (max-width: 991px) {
+      left: 0;
+      top: 10px;
+    }
+
+    h3,p {
+      @media (min-width: 768px) {
+        color: #6f706f;
+        font-size: 42px;
+      }
+    }
+  }
 }
 
 .jelly-gan {
-  margin: 70px 0 30px 0;
+  padding: 70px 0;
 
   .container {
     @media (min-width: 992px) {
@@ -314,17 +360,22 @@ video {
   }
 
   .jelly-gan-data {
-    max-width: 590px;
+    max-width: 370px;
     width: 100%;
 
     @media (min-width: 992px) {
       position: absolute;
-      left: 0;
-      bottom: 60px;
+      left: 180px;
+      bottom: -70px;
     }
 
     h3 {
       margin: 0 0 10px;
+
+      @media (min-width: 992px) {
+        font-size: 32px;
+        margin: 0 0 20px;
+      }
     }
   }
 }
@@ -336,7 +387,7 @@ video {
   }
 
   @media (min-width: 768px) {
-    margin: 100px 0 30px 0;
+    margin: 50px 0 30px 0;
   }
 
   .container {
@@ -357,6 +408,7 @@ video {
         position: absolute;
         left: 80px;
         bottom: 50px;
+        max-width: 310px;
       }
       @media (min-width: 768px) and (max-width: 991px) {
         left: 0;
@@ -369,21 +421,37 @@ video {
           font-weight: 400;
         }
       }
+
+      h3 {
+        margin: 0 0 20px;
+        color: #707070;
+
+        @media (min-width: 1025px) {
+          font-size: 32px;
+          max-width: 230px;
+        }
+      }
     }
   }
 }
 
 .jelly-pintsize {
-  margin: 0 0 150px 0;
+  margin: 0;
 
   @media (max-width: 991px) {
     margin: 0 0 100px 0;
   }
 
   &-data {
-    max-width: 620px;
-    margin: 0 auto;
-    text-align: center;
+
+    h3 {
+      margin: 0;
+      @media (min-width: 1025px) {
+        font-size: 32px;
+        text-align: right;
+
+      }
+    }
 
     p {
       font-weight: 400;
