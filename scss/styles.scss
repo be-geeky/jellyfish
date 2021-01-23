@@ -51,6 +51,21 @@ video {
   transition: all 1.7s;
 }
 
+.last-img-parallax {
+
+  @media (min-width: 1025px) {
+    max-width: 430px;
+  }
+  /*ipad PRo 12.9"*/
+    @media only screen
+  	and (min-device-width: 1024px)
+  	and (max-device-width: 1024px)
+  	and (orientation: portrait)
+  	and (-webkit-min-device-pixel-ratio: 2) {
+  		max-width: 410px;
+  	}
+}
+
 .cms-rapid-wall-chargers {
   .breadcrumbs {
     padding: 15px 0px 15px;
@@ -102,6 +117,17 @@ video {
         height: 100%;
       }
 
+      /*ipad PRo 12.9"*/
+      @media only screen
+      	and (min-device-width: 1024px)
+      	and (max-device-width: 1024px)
+      	and (orientation: portrait)
+      	and (-webkit-min-device-pixel-ratio: 2) {
+          position: absolute;
+      		right: 20px;
+          max-width: 355px;
+      	}
+
       &-data {
         display: -webkit-box;
         display: -ms-flexbox;
@@ -133,6 +159,13 @@ video {
         @media (min-width: 768px) and (max-width: 1024px) {
           font-size: 42px;
         }
+        @media only screen
+      	and (min-device-width: 1024px)
+      	and (max-device-width: 1024px)
+      	and (orientation: portrait)
+      	and (-webkit-min-device-pixel-ratio: 2) {
+      		font-size: 40px;
+      	}
       }
     }
   }
@@ -142,6 +175,17 @@ video {
 
     @media (max-width: 991px) {
       margin: 20px 0 60px;
+    }
+
+    .container {
+      /*ipad PRo 12.9"*/
+      @media only screen
+  		and (min-device-width: 1024px)
+  		and (max-device-width: 1024px)
+  		and (orientation: portrait)
+  		and (-webkit-min-device-pixel-ratio: 2) {
+  			padding: 0 40px;
+  		}
     }
 
     .gun-charger-types {
@@ -159,6 +203,10 @@ video {
 
         .gun-charger-data {
           margin-bottom: 30px;
+
+          .btn-secondary-outline {
+            margin: 40px 0 0;
+          }
         }
       }
 
@@ -170,6 +218,15 @@ video {
         background-position: center;
         background-repeat: no-repeat;
         background-size: contain;
+      }
+
+      .vertical-row {
+        .img-responsive {
+          @media (max-width: 767px) {
+            max-width: 70%;
+            margin: 0 auto;
+          }
+        }
       }
     }
   }
@@ -190,6 +247,16 @@ video {
       @media (min-width: 1025px) {
         max-width: 72%;
       }
+
+      /*ipad PRo 12.9"*/
+      @media only screen
+  		and (min-device-width: 1024px)
+  		and (max-device-width: 1024px)
+  		and (orientation: portrait)
+  		and (-webkit-min-device-pixel-ratio: 2) {
+  			max-width: 80%;
+  			margin: 0 auto;
+  		}
     }
   }
 
@@ -206,6 +273,9 @@ video {
     }
 
     h3 {
+      @media (max-width: 767px) {
+        margin: 0;
+      }
       @media (min-width: 992px) {
         font-size: 32px;
       }
@@ -280,6 +350,9 @@ video {
     &-desc {
       margin-top: 12px;
       font-size: 12px;
+      @media (min-width: 767px) {
+        font-size: 10px;
+      }
       @media (min-width: 768px) and (max-width: 1024px) {
         margin-top: 32px;
       }
@@ -322,17 +395,33 @@ video {
   }
 
   &-content {
-    @media (min-width: 768px) {
-      position: absolute;
-      left: 220px;
-      top: 20px;
+    position: absolute;
+    left: 220px;
+    top: 20px;
+
+    @media (max-width: 767px) {
+      left: 10px;
+      top: 10px;
     }
     @media (min-width: 768px) and (max-width: 991px) {
-      left: 0;
+      left: 40px;
       top: 10px;
     }
 
-    h3,p {
+    /*ipad PRo 12.9"*/
+    @media only screen
+		and (min-device-width: 1024px)
+		and (max-device-width: 1024px)
+		and (orientation: portrait)
+		and (-webkit-min-device-pixel-ratio: 2) {
+			left: 140px;
+		}
+
+    h3 {
+      @media (max-width: 767px) {
+        font-style: italic;
+        font-size: 28px;
+      }
       @media (min-width: 768px) {
         color: #6f706f;
         font-size: 42px;
@@ -426,6 +515,11 @@ video {
         margin: 0 0 20px;
         color: #707070;
 
+        @media (max-width: 767px) {
+          max-width: 160px;
+          margin: 20px 0;
+        }
+
         @media (min-width: 1025px) {
           font-size: 32px;
           max-width: 230px;
@@ -439,17 +533,21 @@ video {
   margin: 0;
 
   @media (max-width: 991px) {
-    margin: 0 0 100px 0;
+    margin: 0 0 50px 0;
   }
 
   &-data {
 
     h3 {
       margin: 0;
+
+      @media (max-width: 767px) {
+        max-width: 160px;
+        margin: 0 0 12px;
+      }
       @media (min-width: 1025px) {
         font-size: 32px;
         text-align: right;
-
       }
     }
 

@@ -40,6 +40,15 @@ video {
 .img-parallax {
   transition: all 1.7s; }
 
+.last-img-parallax {
+  /*ipad PRo 12.9"*/ }
+  @media (min-width: 1025px) {
+    .last-img-parallax {
+      max-width: 430px; } }
+  @media only screen and (min-device-width: 1024px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {
+    .last-img-parallax {
+      max-width: 410px; } }
+
 .cms-rapid-wall-chargers .breadcrumbs {
   padding: 15px 0px 15px;
   background-color: #f7f8f8; }
@@ -63,12 +72,18 @@ video {
 .jelly-land .jelly-title .gan-box {
   max-width: 390px;
   margin: 8px auto;
-  width: 100%; }
+  width: 100%;
+  /*ipad PRo 12.9"*/ }
   @media (min-width: 1025px) {
     .jelly-land .jelly-title .gan-box {
       position: absolute;
       right: 120px;
       height: 100%; } }
+  @media only screen and (min-device-width: 1024px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {
+    .jelly-land .jelly-title .gan-box {
+      position: absolute;
+      right: 20px;
+      max-width: 355px; } }
   .jelly-land .jelly-title .gan-box-data {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -93,19 +108,29 @@ video {
     @media (min-width: 768px) and (max-width: 1024px) {
       .jelly-land .jelly-title .gan-box h1 {
         font-size: 42px; } }
+    @media only screen and (min-device-width: 1024px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {
+      .jelly-land .jelly-title .gan-box h1 {
+        font-size: 40px; } }
 
 .jelly-land .gun-charger {
   margin: 0 0 70px; }
   @media (max-width: 991px) {
     .jelly-land .gun-charger {
       margin: 20px 0 60px; } }
+  .jelly-land .gun-charger .container {
+    /*ipad PRo 12.9"*/ }
+    @media only screen and (min-device-width: 1024px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {
+      .jelly-land .gun-charger .container {
+        padding: 0 40px; } }
   @media (max-width: 767px) {
     .jelly-land .gun-charger .gun-charger-types .mobile-flex {
       flex-wrap: wrap; }
       .jelly-land .gun-charger .gun-charger-types .mobile-flex div:first-child {
         order: 2; }
     .jelly-land .gun-charger .gun-charger-types .gun-charger-data {
-      margin-bottom: 30px; } }
+      margin-bottom: 30px; }
+      .jelly-land .gun-charger .gun-charger-types .gun-charger-data .btn-secondary-outline {
+        margin: 40px 0 0; } }
   .jelly-land .gun-charger .gun-charger-types .gun-charger-bg {
     /* Set a specific height */
     min-height: 650px;
@@ -114,6 +139,10 @@ video {
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain; }
+  @media (max-width: 767px) {
+    .jelly-land .gun-charger .gun-charger-types .vertical-row .img-responsive {
+      max-width: 70%;
+      margin: 0 auto; } }
 
 .rapid-charge {
   width: 100%;
@@ -121,9 +150,15 @@ video {
   margin: 30px 0; }
   .rapid-charge .container {
     position: relative; }
-  @media (min-width: 1025px) {
-    .rapid-charge-img img {
-      max-width: 72%; } }
+  .rapid-charge-img img {
+    /*ipad PRo 12.9"*/ }
+    @media (min-width: 1025px) {
+      .rapid-charge-img img {
+        max-width: 72%; } }
+    @media only screen and (min-device-width: 1024px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {
+      .rapid-charge-img img {
+        max-width: 80%;
+        margin: 0 auto; } }
   .rapid-charge-data {
     width: 100%;
     height: 100%;
@@ -134,6 +169,9 @@ video {
         right: 60px;
         top: 0;
         max-width: 450px; } }
+    @media (max-width: 767px) {
+      .rapid-charge-data h3 {
+        margin: 0; } }
     @media (min-width: 992px) {
       .rapid-charge-data h3 {
         font-size: 32px; } }
@@ -184,6 +222,9 @@ video {
     .rapid-charge-data-desc {
       margin-top: 12px;
       font-size: 12px; }
+      @media (min-width: 767px) {
+        .rapid-charge-data-desc {
+          font-size: 10px; } }
       @media (min-width: 768px) and (max-width: 1024px) {
         .rapid-charge-data-desc {
           margin-top: 32px; } }
@@ -209,19 +250,30 @@ video {
       -webkit-transform: scale(1.2);
       -o-transform: scale(1.2);
       transform: scale(1.2); }
-  @media (min-width: 768px) {
-    .jellyfish-acc-content {
-      position: absolute;
-      left: 220px;
-      top: 20px; } }
-  @media (min-width: 768px) and (max-width: 991px) {
-    .jellyfish-acc-content {
-      left: 0;
-      top: 10px; } }
-  @media (min-width: 768px) {
-    .jellyfish-acc-content h3, .jellyfish-acc-content p {
-      color: #6f706f;
-      font-size: 42px; } }
+  .jellyfish-acc-content {
+    position: absolute;
+    left: 220px;
+    top: 20px;
+    /*ipad PRo 12.9"*/ }
+    @media (max-width: 767px) {
+      .jellyfish-acc-content {
+        left: 10px;
+        top: 10px; } }
+    @media (min-width: 768px) and (max-width: 991px) {
+      .jellyfish-acc-content {
+        left: 40px;
+        top: 10px; } }
+    @media only screen and (min-device-width: 1024px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {
+      .jellyfish-acc-content {
+        left: 140px; } }
+    @media (max-width: 767px) {
+      .jellyfish-acc-content h3 {
+        font-style: italic;
+        font-size: 28px; } }
+    @media (min-width: 768px) {
+      .jellyfish-acc-content h3 {
+        color: #6f706f;
+        font-size: 42px; } }
 
 .jelly-gan {
   padding: 70px 0; }
@@ -281,6 +333,10 @@ video {
 .jelly-smart-data .jelly-smart-content h3 {
   margin: 0 0 20px;
   color: #707070; }
+  @media (max-width: 767px) {
+    .jelly-smart-data .jelly-smart-content h3 {
+      max-width: 160px;
+      margin: 20px 0; } }
   @media (min-width: 1025px) {
     .jelly-smart-data .jelly-smart-content h3 {
       font-size: 32px;
@@ -290,9 +346,13 @@ video {
   margin: 0; }
   @media (max-width: 991px) {
     .jelly-pintsize {
-      margin: 0 0 100px 0; } }
+      margin: 0 0 50px 0; } }
   .jelly-pintsize-data h3 {
     margin: 0; }
+    @media (max-width: 767px) {
+      .jelly-pintsize-data h3 {
+        max-width: 160px;
+        margin: 0 0 12px; } }
     @media (min-width: 1025px) {
       .jelly-pintsize-data h3 {
         font-size: 32px;
