@@ -1,3 +1,7 @@
+body {
+  font-family: acumin-pro, sans-serif;
+}
+
 video {
   max-width: 100%;
   object-fit: fill;
@@ -51,6 +55,12 @@ video {
   transition: all 1.7s;
 }
 
+.full-width {
+  max-width: 1400px;
+  width: 100%;
+  margin: 0 auto;
+}
+
 .last-img-parallax {
 
   @media (min-width: 1025px) {
@@ -95,9 +105,22 @@ video {
 
 .jelly-land {
 
-  h1, h2, h3, h4, h5, h6,p {
+  h1, h2, h3, h4, h5, h6 {
     color: #6f706f;
-    font-weight: 300;
+    font-weight: 700;
+  }
+
+  p {
+    color: #6f706f;
+    font-weight: 400;
+  }
+
+  h3 {
+    font-size: 4.2rem;
+
+    @media (max-width: 767px) {
+      font-size: 2.2rem;
+    }
   }
 
   .jelly-title {
@@ -107,25 +130,24 @@ video {
     }
 
     .gan-box {
-      max-width: 390px;
+      max-width: 437px;
       margin: 8px auto;
       width: 100%;
 
       @media (min-width: 1025px) {
         position: absolute;
-        right: 120px;
+        right: 160px;
         height: 100%;
       }
 
-      /*ipad PRo 12.9"*/
+      /*ipad PRo 12.9" */
       @media only screen
       	and (min-device-width: 1024px)
       	and (max-device-width: 1024px)
       	and (orientation: portrait)
       	and (-webkit-min-device-pixel-ratio: 2) {
           position: absolute;
-      		right: 20px;
-          max-width: 355px;
+      		right: 120px;
       	}
 
       &-data {
@@ -147,14 +169,14 @@ video {
       }
 
       h1 {
-        font-weight: 700;
-        font-size: 46px;
-        font-family: 'proxima_novabold';
+        font-size: 5rem;
         line-height: 0.8em;
         margin: 0;
+        font-weight: 800;
+        font-style: normal;
 
         @media (max-width: 767px) {
-          font-size: 38px;
+          font-size: 3.8rem;
         }
         @media (min-width: 768px) and (max-width: 1024px) {
           font-size: 42px;
@@ -166,6 +188,15 @@ video {
       	and (-webkit-min-device-pixel-ratio: 2) {
       		font-size: 40px;
       	}
+      }
+
+      p {
+        font-weight: 600;
+        font-style: italic;
+
+        &.text-right {
+          margin-top: 10px;
+        }
       }
     }
   }
@@ -229,6 +260,11 @@ video {
         }
       }
     }
+
+    h3 {
+      font-size: 26px;
+      font-weight: 700;
+    }
   }
 }
 
@@ -271,13 +307,18 @@ video {
       top: 0;
       max-width: 450px;
     }
+    /*ipad PRo 12.9"*/
+    @media only screen
+    and (min-device-width: 1024px)
+    and (max-device-width: 1024px)
+    and (orientation: portrait)
+    and (-webkit-min-device-pixel-ratio: 2) {
+      position: static;
+    }
 
     h3 {
       @media (max-width: 767px) {
         margin: 0;
-      }
-      @media (min-width: 992px) {
-        font-size: 32px;
       }
     }
 
@@ -350,6 +391,8 @@ video {
     &-desc {
       margin-top: 12px;
       font-size: 12px;
+      font-weight: 500;
+
       @media (min-width: 767px) {
         font-size: 10px;
       }
@@ -364,6 +407,15 @@ video {
         max-width: 249px;
         margin-left: 100px;
         margin-top: 30px;
+      }
+      /*ipad PRo 12.9"*/
+      @media only screen
+      and (min-device-width: 1024px)
+      and (max-device-width: 1024px)
+      and (orientation: portrait)
+      and (-webkit-min-device-pixel-ratio: 2) {
+        margin: 10px 0 0;
+        max-width: 100%;
       }
     }
   }
@@ -380,16 +432,6 @@ video {
 
       @media (min-width: 1921px) {
         width: 100%;
-      }
-    }
-
-    &:hover, &:focus {
-      img {
-        -ms-transform: scale(1.2);
-        -moz-transform: scale(1.2);
-        -webkit-transform: scale(1.2);
-        -o-transform: scale(1.2);
-        transform: scale(1.2);
       }
     }
   }
@@ -420,11 +462,10 @@ video {
     h3 {
       @media (max-width: 767px) {
         font-style: italic;
-        font-size: 28px;
+        font-size: 2.8rem;
       }
       @media (min-width: 768px) {
         color: #6f706f;
-        font-size: 42px;
       }
     }
   }
@@ -455,14 +496,13 @@ video {
     @media (min-width: 992px) {
       position: absolute;
       left: 180px;
-      bottom: -70px;
+      bottom: -90px;
     }
 
     h3 {
       margin: 0 0 10px;
 
       @media (min-width: 992px) {
-        font-size: 32px;
         margin: 0 0 20px;
       }
     }
@@ -476,7 +516,7 @@ video {
   }
 
   @media (min-width: 768px) {
-    margin: 50px 0 30px 0;
+    margin: 50px auto 30px auto;
   }
 
   .container {
@@ -495,13 +535,22 @@ video {
 
       @media (min-width: 768px) {
         position: absolute;
-        left: 80px;
-        bottom: 50px;
-        max-width: 310px;
+        left: 90px;
+        bottom: 10px;
       }
       @media (min-width: 768px) and (max-width: 991px) {
         left: 0;
         bottom: 10px;
+      }
+
+      /*ipad PRo 12.9"*/
+      @media only screen
+      and (min-device-width: 1024px)
+      and (max-device-width: 1024px)
+      and (orientation: portrait)
+      and (-webkit-min-device-pixel-ratio: 2) {
+        left: 0;
+        font-size: 80%;
       }
 
       h3,p {
@@ -521,8 +570,16 @@ video {
         }
 
         @media (min-width: 1025px) {
-          font-size: 32px;
-          max-width: 230px;
+          max-width: 280px;
+          line-height: 3.8rem;
+        }
+      }
+
+      p {
+        @media (min-width: 1025px) {
+          max-width: 330px;
+          font-size: 1.6rem;
+          width: 100%;
         }
       }
     }
@@ -546,7 +603,6 @@ video {
         margin: 0 0 12px;
       }
       @media (min-width: 1025px) {
-        font-size: 32px;
         text-align: right;
       }
     }
@@ -554,6 +610,22 @@ video {
     p {
       font-weight: 400;
     }
+  }
+}
+
+.jelly-products {
+  .container {
+    @media (max-width: 767px) {
+      margin: 0 15px 0 0;
+    }
+    /*ipad PRo 12.9"*/
+      @media only screen
+    	and (min-device-width: 1024px)
+    	and (max-device-width: 1024px)
+    	and (orientation: portrait)
+    	and (-webkit-min-device-pixel-ratio: 2) {
+    		margin: 0 15px;
+    	}
   }
 }
 

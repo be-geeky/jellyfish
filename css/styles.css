@@ -1,3 +1,6 @@
+body {
+  font-family: acumin-pro, sans-serif; }
+
 video {
   max-width: 100%;
   object-fit: fill; }
@@ -40,6 +43,11 @@ video {
 .img-parallax {
   transition: all 1.7s; }
 
+.full-width {
+  max-width: 1400px;
+  width: 100%;
+  margin: 0 auto; }
+
 .last-img-parallax {
   /*ipad PRo 12.9"*/ }
   @media (min-width: 1025px) {
@@ -62,28 +70,37 @@ video {
       color: #797e80;
       content: "\f105"; }
 
-.jelly-land h1, .jelly-land h2, .jelly-land h3, .jelly-land h4, .jelly-land h5, .jelly-land h6, .jelly-land p {
+.jelly-land h1, .jelly-land h2, .jelly-land h3, .jelly-land h4, .jelly-land h5, .jelly-land h6 {
   color: #6f706f;
-  font-weight: 300; }
+  font-weight: 700; }
+
+.jelly-land p {
+  color: #6f706f;
+  font-weight: 400; }
+
+.jelly-land h3 {
+  font-size: 4.2rem; }
+  @media (max-width: 767px) {
+    .jelly-land h3 {
+      font-size: 2.2rem; } }
 
 .jelly-land .jelly-title .container {
   position: relative; }
 
 .jelly-land .jelly-title .gan-box {
-  max-width: 390px;
+  max-width: 437px;
   margin: 8px auto;
   width: 100%;
-  /*ipad PRo 12.9"*/ }
+  /*ipad PRo 12.9" */ }
   @media (min-width: 1025px) {
     .jelly-land .jelly-title .gan-box {
       position: absolute;
-      right: 120px;
+      right: 160px;
       height: 100%; } }
   @media only screen and (min-device-width: 1024px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {
     .jelly-land .jelly-title .gan-box {
       position: absolute;
-      right: 20px;
-      max-width: 355px; } }
+      right: 120px; } }
   .jelly-land .jelly-title .gan-box-data {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -97,20 +114,25 @@ video {
       max-width: 40px;
       margin-left: 5px; }
   .jelly-land .jelly-title .gan-box h1 {
-    font-weight: 700;
-    font-size: 46px;
-    font-family: 'proxima_novabold';
+    font-size: 5rem;
     line-height: 0.8em;
-    margin: 0; }
+    margin: 0;
+    font-weight: 800;
+    font-style: normal; }
     @media (max-width: 767px) {
       .jelly-land .jelly-title .gan-box h1 {
-        font-size: 38px; } }
+        font-size: 3.8rem; } }
     @media (min-width: 768px) and (max-width: 1024px) {
       .jelly-land .jelly-title .gan-box h1 {
         font-size: 42px; } }
     @media only screen and (min-device-width: 1024px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {
       .jelly-land .jelly-title .gan-box h1 {
         font-size: 40px; } }
+  .jelly-land .jelly-title .gan-box p {
+    font-weight: 600;
+    font-style: italic; }
+    .jelly-land .jelly-title .gan-box p.text-right {
+      margin-top: 10px; }
 
 .jelly-land .gun-charger {
   margin: 0 0 70px; }
@@ -143,6 +165,9 @@ video {
     .jelly-land .gun-charger .gun-charger-types .vertical-row .img-responsive {
       max-width: 70%;
       margin: 0 auto; } }
+  .jelly-land .gun-charger h3 {
+    font-size: 26px;
+    font-weight: 700; }
 
 .rapid-charge {
   width: 100%;
@@ -162,19 +187,20 @@ video {
   .rapid-charge-data {
     width: 100%;
     height: 100%;
-    max-width: 100%; }
+    max-width: 100%;
+    /*ipad PRo 12.9"*/ }
     @media (min-width: 1025px) {
       .rapid-charge-data {
         position: absolute;
         right: 60px;
         top: 0;
         max-width: 450px; } }
+    @media only screen and (min-device-width: 1024px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {
+      .rapid-charge-data {
+        position: static; } }
     @media (max-width: 767px) {
       .rapid-charge-data h3 {
         margin: 0; } }
-    @media (min-width: 992px) {
-      .rapid-charge-data h3 {
-        font-size: 32px; } }
     @media (min-width: 768px) and (max-width: 1024px) {
       .rapid-charge-data h3,
       .rapid-charge-data p {
@@ -221,19 +247,26 @@ video {
               background-position: center 2px; } }
     .rapid-charge-data-desc {
       margin-top: 12px;
-      font-size: 12px; }
+      font-size: 12px;
+      font-weight: 500; }
       @media (min-width: 767px) {
         .rapid-charge-data-desc {
           font-size: 10px; } }
       @media (min-width: 768px) and (max-width: 1024px) {
         .rapid-charge-data-desc {
           margin-top: 32px; } }
-    @media (min-width: 991px) {
-      .rapid-charge-data-text {
-        font-size: 21px;
-        max-width: 249px;
-        margin-left: 100px;
-        margin-top: 30px; } }
+    .rapid-charge-data-text {
+      /*ipad PRo 12.9"*/ }
+      @media (min-width: 991px) {
+        .rapid-charge-data-text {
+          font-size: 21px;
+          max-width: 249px;
+          margin-left: 100px;
+          margin-top: 30px; } }
+      @media only screen and (min-device-width: 1024px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {
+        .rapid-charge-data-text {
+          margin: 10px 0 0;
+          max-width: 100%; } }
 
 .jellyfish-acc {
   position: relative; }
@@ -244,12 +277,6 @@ video {
       @media (min-width: 1921px) {
         .jellyfish-acc-img img {
           width: 100%; } }
-    .jellyfish-acc-img:hover img, .jellyfish-acc-img:focus img {
-      -ms-transform: scale(1.2);
-      -moz-transform: scale(1.2);
-      -webkit-transform: scale(1.2);
-      -o-transform: scale(1.2);
-      transform: scale(1.2); }
   .jellyfish-acc-content {
     position: absolute;
     left: 220px;
@@ -269,11 +296,10 @@ video {
     @media (max-width: 767px) {
       .jellyfish-acc-content h3 {
         font-style: italic;
-        font-size: 28px; } }
+        font-size: 2.8rem; } }
     @media (min-width: 768px) {
       .jellyfish-acc-content h3 {
-        color: #6f706f;
-        font-size: 42px; } }
+        color: #6f706f; } }
 
 .jelly-gan {
   padding: 70px 0; }
@@ -290,12 +316,11 @@ video {
       .jelly-gan .jelly-gan-data {
         position: absolute;
         left: 180px;
-        bottom: -70px; } }
+        bottom: -90px; } }
     .jelly-gan .jelly-gan-data h3 {
       margin: 0 0 10px; }
       @media (min-width: 992px) {
         .jelly-gan .jelly-gan-data h3 {
-          font-size: 32px;
           margin: 0 0 20px; } }
 
 @media (max-width: 767px) {
@@ -304,7 +329,7 @@ video {
 
 @media (min-width: 768px) {
   .jelly-smart {
-    margin: 50px 0 30px 0; } }
+    margin: 50px auto 30px auto; } }
 
 .jelly-smart .container {
   position: relative; }
@@ -313,34 +338,41 @@ video {
   .jelly-smart-data img {
     width: 100%; } }
 
-@media (min-width: 768px) {
-  .jelly-smart-data .jelly-smart-content {
-    position: absolute;
-    left: 80px;
-    bottom: 50px;
-    max-width: 310px; } }
-
-@media (min-width: 768px) and (max-width: 991px) {
-  .jelly-smart-data .jelly-smart-content {
-    left: 0;
-    bottom: 10px; } }
-
-@media (min-width: 768px) {
-  .jelly-smart-data .jelly-smart-content h3, .jelly-smart-data .jelly-smart-content p {
-    color: #fff;
-    font-weight: 400; } }
-
-.jelly-smart-data .jelly-smart-content h3 {
-  margin: 0 0 20px;
-  color: #707070; }
-  @media (max-width: 767px) {
-    .jelly-smart-data .jelly-smart-content h3 {
-      max-width: 160px;
-      margin: 20px 0; } }
+.jelly-smart-data .jelly-smart-content {
+  /*ipad PRo 12.9"*/ }
+  @media (min-width: 768px) {
+    .jelly-smart-data .jelly-smart-content {
+      position: absolute;
+      left: 90px;
+      bottom: 10px; } }
+  @media (min-width: 768px) and (max-width: 991px) {
+    .jelly-smart-data .jelly-smart-content {
+      left: 0;
+      bottom: 10px; } }
+  @media only screen and (min-device-width: 1024px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {
+    .jelly-smart-data .jelly-smart-content {
+      left: 0;
+      font-size: 80%; } }
+  @media (min-width: 768px) {
+    .jelly-smart-data .jelly-smart-content h3, .jelly-smart-data .jelly-smart-content p {
+      color: #fff;
+      font-weight: 400; } }
+  .jelly-smart-data .jelly-smart-content h3 {
+    margin: 0 0 20px;
+    color: #707070; }
+    @media (max-width: 767px) {
+      .jelly-smart-data .jelly-smart-content h3 {
+        max-width: 160px;
+        margin: 20px 0; } }
+    @media (min-width: 1025px) {
+      .jelly-smart-data .jelly-smart-content h3 {
+        max-width: 280px;
+        line-height: 3.8rem; } }
   @media (min-width: 1025px) {
-    .jelly-smart-data .jelly-smart-content h3 {
-      font-size: 32px;
-      max-width: 230px; } }
+    .jelly-smart-data .jelly-smart-content p {
+      max-width: 330px;
+      font-size: 1.6rem;
+      width: 100%; } }
 
 .jelly-pintsize {
   margin: 0; }
@@ -355,10 +387,18 @@ video {
         margin: 0 0 12px; } }
     @media (min-width: 1025px) {
       .jelly-pintsize-data h3 {
-        font-size: 32px;
         text-align: right; } }
   .jelly-pintsize-data p {
     font-weight: 400; }
+
+.jelly-products .container {
+  /*ipad PRo 12.9"*/ }
+  @media (max-width: 767px) {
+    .jelly-products .container {
+      margin: 0 15px 0 0; } }
+  @media only screen and (min-device-width: 1024px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {
+    .jelly-products .container {
+      margin: 0 15px; } }
 
 @keyframes progressBar {
   0% {
